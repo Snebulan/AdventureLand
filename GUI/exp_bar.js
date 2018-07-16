@@ -11,6 +11,7 @@ function init_xpbar() {
   let mpb = $('#mpbar');
 
   mpb.parent().find('#expbar').remove();
+  $('#xpui').parent().remove();
 
   let expbar_container = $('<div id="expbar"></div>').css({
     background:'black',
@@ -18,6 +19,7 @@ function init_xpbar() {
     width: '100%',
     border: '4px solid gray',
     'margin-left': '-4px',
+	'margin-top': '-5px',
     position: 'relative',
   });
 	
